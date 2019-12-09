@@ -8,8 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   
   nombre = "Eduardo";
+  nombre2 = "eduARdo alfonso andres cAldera coltteRs";
 
-  arreglo = [1,2,3,4,5,6,7,8,9,10];
+  arreglo = [1,2,3,4,5,6,7,8,9,10]; 
 
   PI = Math.PI;
 
@@ -34,5 +35,9 @@ export class AppComponent {
   })
 
   fecha = new Date();
+
+  video = "NgLVxhNEbn4";
+
+  activar:boolean = true;
 
 }
