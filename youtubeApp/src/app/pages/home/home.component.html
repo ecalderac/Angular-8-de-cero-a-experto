@@ -3,7 +3,7 @@
 
 
 <div class="row row-cols-1 row-cols-md-4 g-4">
-    <div class="col" *ngFor="let video of videos">
+    <div class="col animated fadeIn" *ngFor="let video of videos">
         <div class="card h-100">
             <img [src]="video.thumbnails.high.url" class="card-img-top" alt="...">
             <div class="card-body">
@@ -13,7 +13,7 @@
             <div class="card-footer">
                 <small class="text-muted"><strong>Publicado:</strong> {{video.publishedAt | date}}</small>
                 <hr>
-                <div class="text-center"><button class="btn btn-outline-primary btn-block">Ver video</button></div>
+                <div class="text-center"><button class="btn btn-outline-primary btn-block" (click)="mostrarVideo(video)">Ver video</button></div>
                 <hr>
 
             </div>
@@ -23,7 +23,7 @@
 
 <div class="row mt-5 mb-5 text-center">
     <div class="col">
-        <button class="btn btn-primary btn-lg">
+        <button class="btn btn-primary btn-lg" (click)="cargarVideos()">
             Siguiente
         </button>
     </div>
