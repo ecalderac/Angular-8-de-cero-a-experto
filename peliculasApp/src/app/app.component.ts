@@ -10,18 +10,4 @@ import { CarteleraResponse } from './interfaces/cartelera-response';
 export class AppComponent {
   title = 'peliculasApp';
 
-  constructor(private peliculasService: PeliculasService) {
-    
-  }
-
-  ngOnInit(){
-    this.getCartelera();
-  }
-
-  getCartelera(){
-    this.peliculasService.getCartelera().subscribe( resp => {
-      console.log(resp);
-    })
-  }
-
 }
