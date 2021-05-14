@@ -1,0 +1,9 @@
+npm install ng-starrating --legacy-peer-deps
+
+o
+
+npm install ng-starrating --force
+
+probar con uno de los dos, luego si al importar en el modulo ahy error hacer lo siguiente.
+
+En tsconfig.json > compilerOptions  añadir la opción "skipLibCheck": true
