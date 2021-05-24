@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "firechat-47370": {
+      "hosting": {
+        "fireChat-angularFire2": [
+          "firechat-47370"
+        ]
+      }
+    }
+  }
+}

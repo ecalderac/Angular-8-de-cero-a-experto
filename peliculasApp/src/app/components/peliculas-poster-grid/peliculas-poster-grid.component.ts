@@ -13,7 +13,7 @@ export class PeliculasPosterGridComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void { 
-    console.log(this.movies)
+    //console.log(this.movies)
   }
 
 }

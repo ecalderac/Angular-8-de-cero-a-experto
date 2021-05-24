@@ -1,7 +1,7 @@
-<div class="row" *ngIf="pelicula">
+<div class="row animate__animated animate__fadeIn animate__faster" *ngIf="pelicula">
     <div class="col-md-6">
         <!-- Imagen -->
-        <img [src]="pelicula.poster_path | poster" alt="pelicula.title" class="img-thumbnail">
+        <img [src]="pelicula.poster_path | poster" alt="pelicula.title" class="img-thumbnail" height="600px" width="500px">
     </div>
     <div class="col-md-6">
         <!-- Detalle -->
@@ -24,5 +24,11 @@
                 <button class="btn btn-outline-info" (click)="onRegresar()">Regresar</button>
             </div>
         </div>
+    </div>
+</div>
+
+<div class="row" *ngIf="cast.length > 0">
+    <div class="col">
+        <app-cast-slideshow [cast]="cast"></app-cast-slideshow>
     </div>
 </div>
