@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit {
         this.movies.push(...movies );
       })
     }
-    console.log(pos, max);
+    //console.log(pos, max);
 
   }
 
